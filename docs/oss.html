@@ -9,25 +9,24 @@
 <body>
 
     <!-- ========================================================= -->
-    <!-- ======================= ESPAÑOL ======================== -->
+    <!-- ======================= ESPAÑOL ========================= -->
     <!-- ========================================================= -->
 
     <h1>Componentes de Terceros</h1>
 
-    <p>
-        La aplicación utiliza paquetes NuGet y recursos gráficos de terceros.
-        Se reconocen sus autores, colecciones y licencias conforme a lo exigido.
-    </p>
+    <p>La aplicación utiliza paquetes NuGet, recursos gráficos y una base de datos bíblica de terceros. Se reconocen sus autores, colecciones y condiciones de uso conforme a lo exigido.</p>
 
+    <!-- ==================== NuGet Packages ==================== -->
     <h2>Paquetes NuGet incluidos (Licencia MIT)</h2>
     <div class="package">• CommunityToolkit.Maui — <code>11.2.0</code> — © .NET Foundation — MIT</div>
     <div class="package">• CommunityToolkit.Mvvm — <code>8.4.0</code> — © .NET Foundation — MIT</div>
     <div class="package">• Newtonsoft.Json — <code>13.0.3</code> — © James Newton-King — MIT</div>
-    <div class="package">• SkiaSharp.Views.Maui.Controls — <code>3.119.0</code> — © Microsoft & Contributors — MIT</div>
+    <div class="package">• SkiaSharp.Views.Maui.Controls — <code>3.119.0</code> — © Microsoft &amp; Contributors — MIT</div>
     <div class="package">• sqlite-net-pcl — <code>1.9.172</code> — © Frank Krueger — MIT</div>
-    <div class="package">• SQLiteNetExtensions — <code>2.1.0</code> — © Frank Krueger & Contributors — MIT</div>
+    <div class="package">• SQLiteNetExtensions — <code>2.1.0</code> — © Frank Krueger &amp; Contributors — MIT</div>
     <div class="package">• Topten.RichTextKit — <code>0.4.167</code> — © Topten Software — MIT</div>
 
+    <!-- ==================== Skia BSD ==================== -->
     <h2>Skia (motor gráfico)</h2>
     <div class="package">
         Skia es un motor gráfico 2D utilizado a través de SkiaSharp.<br><br>
@@ -35,83 +34,157 @@
         Licencia: BSD License
     </div>
 
-    <h3>Texto de la licencia BSD</h3>
+    <h3>Texto de la licencia BSD (traducción al español)</h3>
 <pre>
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-[texto íntegro BSD…]
+La redistribución y el uso en formas de código fuente y binarias, con o sin
+modificación, están permitidos siempre que se cumplan las siguientes condiciones:
+
+1. Las redistribuciones del código fuente deben conservar el aviso de copyright
+   anterior, esta lista de condiciones y la siguiente renuncia de responsabilidad.
+
+2. Las redistribuciones en forma binaria deben reproducir el aviso de copyright
+   anterior, esta lista de condiciones y la siguiente renuncia de responsabilidad
+   en la documentación y/o en otros materiales proporcionados con la distribución.
+
+3. Ni el nombre de The Chromium Authors ni los nombres de sus colaboradores
+   pueden utilizarse para respaldar o promover productos derivados de este software
+   sin autorización previa específica por escrito.
+
+ESTE SOFTWARE ES PROPORCIONADO POR LOS TITULARES DEL COPYRIGHT Y COLABORADORES
+"TAL CUAL" Y SE RENUNCIA A CUALQUIER GARANTÍA EXPRESA O IMPLÍCITA, INCLUYENDO,
+PERO SIN LIMITARSE A, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD E IDONEIDAD
+PARA UN PROPÓSITO PARTICULAR. EN NINGÚN CASO EL TITULAR DEL COPYRIGHT O LOS
+COLABORADORES SERÁN RESPONSABLES POR DAÑOS DIRECTOS, INDIRECTOS, INCIDENTALES,
+ESPECIALES, EJEMPLARES O CONSECUENTES (INCLUYENDO, PERO SIN LIMITARSE A,
+ADQUISICIÓN DE BIENES O SERVICIOS SUSTITUTOS; PÉRDIDA DE USO, DATOS O BENEFICIOS;
+O INTERRUPCIÓN DEL NEGOCIO) CAUSADOS DE CUALQUIER MANERA Y BAJO CUALQUIER TEORÍA
+DE RESPONSABILIDAD, YA SEA POR CONTRATO, RESPONSABILIDAD ESTRICTA O AGRAVIO
+(INCLUYENDO NEGLIGENCIA O DE OTRO MODO), QUE SURJA DE CUALQUIER MANERA DEL USO
+DE ESTE SOFTWARE, INCLUSO SI SE HA ADVERTIDO DE LA POSIBILIDAD DE TALES DAÑOS.
 </pre>
 
+    <!-- ==================== Biblical Text & Database ==================== -->
     <h2>Texto Bíblico y Base de Datos</h2>
+
     <div class="package">
         El texto bíblico utilizado en esta aplicación corresponde a la versión
         <strong>Reina-Valera 1909</strong>, la cual se encuentra en dominio público.<br><br>
 
-        La base de datos original, incluyendo su estructura y compilación digital,
+        La base de datos original, incluyendo su estructura y compilación digital del texto,
         proviene del proyecto <strong>Bible SuperSearch</strong>, un ministerio de
         <strong>Preserved Word Ministries</strong>.<br><br>
 
         Fuente original:
-        <a href="https://www.biblesupersearch.com/" target="_blank">
+        <a href="https://www.biblesupersearch.com/" target="_blank" rel="noopener">
             https://www.biblesupersearch.com/
         </a><br><br>
 
-        La base de datos ha sido adaptada y modificada para su uso local y sin conexión.
-        Estas modificaciones son de carácter técnico y no alteran el contenido doctrinal.
+        La base de datos ha sido adaptada y modificada para su uso local y sin conexión
+        dentro de esta aplicación. Estas modificaciones son de carácter técnico y no
+        alteran el contenido doctrinal del texto bíblico.
     </div>
 
-    <h3>Condiciones de uso (fuente original)</h3>
+    <h3>Condiciones de uso (fuente original) — resumen en español</h3>
 <pre>
-Bible SuperSearch es proporcionado para uso NO COMERCIAL.
-SIN NINGUNA GARANTÍA.
+• Bible SuperSearch es gratuito para uso NO COMERCIAL.
+• El servicio/datos se ofrecen “TAL CUAL”, sin garantía (incluyendo garantías implícitas
+  de comerciabilidad o idoneidad para un propósito particular).
+• El proveedor se reserva el derecho de limitar acceso o discontinuar el servicio.
+• Cualquier uso comercial requiere permiso del titular (Preserved Word Ministries).
 </pre>
 
+    <!-- ==================== Assets / Icons ==================== -->
     <h2>Assets / Iconos</h2>
     <p>Copyright ngongzuo</p>
 
-    <h2>Texto de la Licencia MIT</h2>
+    <!-- ==================== MIT License (Spanish) ==================== -->
+    <h2>Texto de la Licencia MIT (para los paquetes NuGet)</h2>
 <pre>
 MIT License
-[texto íntegro MIT…]
+
+Copyright (c) los respectivos autores.
+
+Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia
+de este software y de los archivos de documentación asociados (el "Software"),
+para utilizar el Software sin restricción, incluyendo sin limitación los derechos
+a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender
+copias del Software, y a permitir a las personas a las que se les proporcione el
+Software a hacer lo mismo, sujeto a las siguientes condiciones:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas
+las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA
+O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN,
+IDONEIDAD PARA UN PROPÓSITO PARTICULAR E INCUMPLIMIENTO. EN NINGÚN CASO LOS
+AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES DE CUALQUIER RECLAMACIÓN,
+DAÑO U OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO O
+CUALQUIER OTRA, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO
+U OTRO TIPO DE ACCIONES EN EL SOFTWARE.
 </pre>
+
+    <small>Se reconocen y respetan los avisos de copyright de los autores en el ámbito de sus respectivas licencias.</small>
 
     <hr>
 
     <!-- ========================================================= -->
-    <!-- ======================== ENGLISH ======================= -->
+    <!-- ======================== ENGLISH ======================== -->
     <!-- ========================================================= -->
 
     <h1>Third-Party Components</h1>
 
-    <p>
-        This application uses third-party NuGet packages and graphic assets.
-        Their authors, collections, and licenses are acknowledged as required.
-    </p>
+    <p>This application uses third-party NuGet packages, graphic assets, and a third-party biblical database. Their authors, collections, and usage terms are acknowledged as required.</p>
 
+    <!-- ==================== NuGet Packages ==================== -->
     <h2>Included NuGet Packages (MIT License)</h2>
     <div class="package">• CommunityToolkit.Maui — <code>11.2.0</code> — © .NET Foundation — MIT</div>
     <div class="package">• CommunityToolkit.Mvvm — <code>8.4.0</code> — © .NET Foundation — MIT</div>
     <div class="package">• Newtonsoft.Json — <code>13.0.3</code> — © James Newton-King — MIT</div>
-    <div class="package">• SkiaSharp.Views.Maui.Controls — <code>3.119.0</code> — © Microsoft & Contributors — MIT</div>
+    <div class="package">• SkiaSharp.Views.Maui.Controls — <code>3.119.0</code> — © Microsoft &amp; Contributors — MIT</div>
     <div class="package">• sqlite-net-pcl — <code>1.9.172</code> — © Frank Krueger — MIT</div>
-    <div class="package">• SQLiteNetExtensions — <code>2.1.0</code> — © Frank Krueger & Contributors — MIT</div>
+    <div class="package">• SQLiteNetExtensions — <code>2.1.0</code> — © Frank Krueger &amp; Contributors — MIT</div>
     <div class="package">• Topten.RichTextKit — <code>0.4.167</code> — © Topten Software — MIT</div>
 
+    <!-- ==================== Skia BSD ==================== -->
     <h2>Skia (graphics engine)</h2>
     <div class="package">
         Skia is a 2D graphics engine used through SkiaSharp.<br><br>
         Copyright (c) 2018 The Chromium Authors. All rights reserved.<br>
-        License: BSD
+        License: BSD License
     </div>
 
     <h3>BSD License Text</h3>
 <pre>
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
-[full BSD text…]
+
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the Chromium Authors nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </pre>
 
+    <!-- ==================== Biblical Text & Database ==================== -->
     <h2>Biblical Text and Database</h2>
+
     <div class="package">
         The biblical text used in this application corresponds to the
         <strong>Reina-Valera 1909</strong> version, which is in the public domain.<br><br>
@@ -121,33 +194,55 @@ modification, are permitted provided that the following conditions are met:
         <strong>Preserved Word Ministries</strong>.<br><br>
 
         Original source:
-        <a href="https://www.biblesupersearch.com/" target="_blank">
+        <a href="https://www.biblesupersearch.com/" target="_blank" rel="noopener">
             https://www.biblesupersearch.com/
         </a><br><br>
 
-        The database has been adapted and modified for local, offline use.
-        These modifications are technical and do not alter doctrinal content.
+        The database has been adapted and modified for local, offline use within
+        this application. These modifications are technical in nature and do not
+        alter the doctrinal content of the biblical text.
     </div>
 
-    <h3>Terms of Use (original source)</h3>
+    <h3>Terms of Use (original source) — English summary</h3>
 <pre>
-Bible SuperSearch is provided for NON-COMMERCIAL use.
-WITHOUT ANY WARRANTY.
+• Bible SuperSearch is free for NON-COMMERCIAL usage.
+• The service/data is provided “AS IS”, WITHOUT ANY WARRANTY (including implied
+  warranties of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE).
+• The provider reserves the right to limit access and discontinue the service.
+• Any commercial usage requires permission from the rights holder (Preserved Word Ministries).
 </pre>
 
+    <!-- ==================== Assets / Icons ==================== -->
     <h2>Assets / Icons</h2>
     <p>Copyright ngongzuo</p>
 
-    <h2>MIT License Text</h2>
+    <!-- ==================== MIT License (English) ==================== -->
+    <h2>MIT License Text (for NuGet packages)</h2>
 <pre>
 MIT License
-[full MIT text…]
+
+Copyright (c) the respective authors.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 </pre>
 
-    <small>
-        Copyright notices of third-party authors are acknowledged and respected
-        under their respective licenses.
-    </small>
+    <small>Copyright notices of third-party authors are acknowledged and respected under their respective licenses and terms.</small>
 
 </body>
 </html>
