@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Respaldo y Restauración</title>
-   <link rel="stylesheet" href="legal/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <h1>Respaldo y Restauración</h1>
@@ -23,9 +23,14 @@
 
   <h2>Comportamiento según plataforma</h2>
   <ul>
-    <li><strong>Android / iOS:</strong> al exportar, el sistema abre la bandeja de compartir para que guardes o envíes el archivo donde prefieras (Google Drive, correo, etc.). Al importar, se abre el selector de archivos del sistema.</li>
-    <li><strong>Windows:</strong> al exportar, se abre un selector de carpeta para que elijas dónde guardar el archivo. Al importar, se abre el selector de archivos.</li>
+    <li><strong>Android e iOS — Guardar en dispositivo / Google Drive:</strong> se abre el selector de documentos del sistema operativo. Desde el panel lateral puedes navegar a Descargas, Documentos, SD o directamente a <em>Google Drive</em>. El sistema gestiona el acceso sin necesitar permisos adicionales.</li>
+    <li><strong>Android e iOS — Compartir (WhatsApp, Gmail…):</strong> se abre el panel de compartir del sistema con todas tus apps disponibles: <em>WhatsApp</em>, <em>Gmail</em>, <em>Telegram</em>, <em>OneDrive</em>, etc.</li>
+    <li><strong>Windows:</strong> al exportar se abre el selector de carpetas del sistema para que elijas directamente dónde guardar el archivo.</li>
+    <li><strong>Importar (todas las plataformas):</strong> se abre el selector de archivos del sistema. En Android, Google Drive también aparece en el panel lateral del selector.</li>
   </ul>
+  <div class="note">
+    <strong>Sin permisos adicionales:</strong> la app no solicita acceso al almacenamiento. El sistema operativo gestiona el acceso de forma segura cuando tú eliges la ubicación.
+  </div>
 
   <h2>Buenas prácticas (muy importante)</h2>
   <ul>
@@ -38,9 +43,28 @@
   <h2>Cómo crear un respaldo (dispositivo actual)</h2>
   <ol>
     <li>Abre la app y ve a <strong>Menú → Exportar respaldo</strong>.</li>
-    <li>Elige dónde guardar el archivo <code>marcados_backup.json</code> según la plataforma (ver arriba).</li>
-    <li>Verifica que el archivo quedó creado y, si puedes, <strong>sube una copia</strong> a Google Drive o guárdalo en un USB/PC.</li>
+    <li>
+      En <strong>Android e iOS</strong> elige una de las dos opciones:
+      <ul>
+        <li><strong>Guardar en dispositivo / Google Drive</strong> — se abre el selector del sistema; navega a la carpeta deseada (Descargas, Documentos, o <em>Google Drive</em> desde el panel lateral) y confirma.</li>
+        <li><strong>Compartir (WhatsApp, Gmail…)</strong> — se abre el panel de compartir; elige la app con la que deseas enviar el archivo.</li>
+      </ul>
+      En <strong>Windows</strong> se abre directamente el selector de carpetas.
+    </li>
+    <li>Verifica que el archivo <code>marcados_backup.json</code> quedó creado en el destino elegido.</li>
+    <li>Si guardaste localmente, <strong>sube también una copia</strong> a Drive o guárdalo en un USB/PC como respaldo adicional.</li>
   </ol>
+
+  <div class="note">
+    <strong>¿No ves el archivo en Google Drive después de guardarlo?</strong><br/>
+    Google Drive puede estar configurado para subir archivos solo con WiFi. Si guardaste en
+    Drive pero el archivo no aparece de inmediato, verifica lo siguiente en tu celular:<br/><br/>
+    Abre la app <strong>Google Drive → Configuración → Datos móviles y sin conexión → Subir
+    archivos con datos</strong> y activa esa opción.<br/><br/>
+    Si prefieres no usar datos móviles, conéctate a una red WiFi y el archivo se subirá
+    automáticamente. Mientras no se complete la subida, Drive mostrará el archivo como
+    <em>"en espera"</em>.
+  </div>
 
   <h2>Cómo restaurar en tu dispositivo nuevo</h2>
   <ol>
@@ -57,6 +81,7 @@
     el dispositivo nuevo, usa el archivo <code>marcados_backup.json</code> que guardaste.
   </div>
 
-  <small>Última actualización: 2026-04-11</small>
+  <small>Última actualización: 2026-04-30</small>
 </body>
 </html>
+
